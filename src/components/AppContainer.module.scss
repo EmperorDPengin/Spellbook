@@ -1,0 +1,9 @@
+.appContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.5s ease-in-out;
+}
