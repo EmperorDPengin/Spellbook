@@ -2,8 +2,8 @@
 const isProd = process.env.NODE_ENV === 'production'
 const nextConfig = {
   reactStrictMode: true,
-  basePath: isProd ? '/Spellbook' : '',
-  assetPrefix: isProd ? '/Spellbook/' : '',
+  basePath: isProd ? '' : '',
+  assetPrefix: isProd ? '' : '',
   output: 'export',
   trailingSlash: true,
 };
