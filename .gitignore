@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Docker
+Dockerfile
+
+# Local IDE configurations
+.idea/
+.vscode/
