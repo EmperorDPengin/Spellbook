@@ -1,0 +1,22 @@
+.tipsBox {
+  background: var(--primary-color);
+  border: 2px dashed var(--accent-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.tipsBox ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.tipsBox li {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.tipsBox li::marker{
+  color: var(--accent-color)
+}

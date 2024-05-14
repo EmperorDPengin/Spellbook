@@ -6,15 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stylelint": "stylelint '**/*.{css.scss}'",
+    "reinstall": "rimraf node_modules package-lock.json && npm install"
   },
   "dependencies": {
+    "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "sass": "^1.77.1"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "@babel/core": "^7.24.5",
+    "@babel/eslint-parser": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-react": "^7.24.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.3",
+    "rimraf": "^5.0.7",
+    "stylelint": "^16.5.0",
+    "stylelint-config-standard": "^36.0.0"
   }
 }
