@@ -1,19 +1,11 @@
+/** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production'
-
-export default {
+const nextConfig = {
+  reactStrictMode: true,
   basePath: isProd ? '/Spellbook' : '',
   assetPrefix: isProd ? '/Spellbook/' : '',
+  output: 'export',
   trailingSlash: true,
-}
+};
 
-
-
-
-
-
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   reactStrictMode: true,
-// };
-
-// export default nextConfig;
+export default nextConfig;
