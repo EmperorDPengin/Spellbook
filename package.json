@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "stylelint": "stylelint '**/*.{css.scss}'",
-    "reinstall": "rimraf node_modules package-lock.json && npm install"
+    "reinstall": "rimraf node_modules package-lock.json && npm install",
+    "export": "next build && next export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -26,6 +28,7 @@
     "eslint-config-next": "^14.2.3",
     "rimraf": "^5.0.7",
     "stylelint": "^16.5.0",
-    "stylelint-config-standard": "^36.0.0"
+    "stylelint-config-standard": "^36.0.0",
+    "gh-pages": "latest"
   }
 }
